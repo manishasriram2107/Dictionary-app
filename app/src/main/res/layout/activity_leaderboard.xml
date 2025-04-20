@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/editWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit word" />
+
+    <!-- 🏆 Trophy Image at the Top -->
+    <ImageView
+        android:id="@+id/trophyImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/trophy"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Trophy" />
+
+    <!-- 📝 Title with Words Icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iconWords"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/words_icon"
+            android:contentDescription="Words Icon"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/showFavoritesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorites"
+            android:textColor="#000000"
+            android:backgroundTint="#FFD700" /> <!-- gold-like -->
+
+        <Button
+            android:id="@+id/showLearnedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learned"
+            android:textColor="#000000"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#D3D3D3" /> <!-- light gray -->
+    </LinearLayout>
+
+    <!-- Leaderboard List -->
+    <ListView
+        android:id="@+id/leaderboardListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Mascot Image -->
+        <ImageView
+            android:id="@+id/imgMascot"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/dictionary_mascot"
+            android:contentDescription="Mascot"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Your Account"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="30dp"
+            android:letterSpacing="0.05" />
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:padding="14dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#000000"
+            android:textColorHint="#BBBBBB"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#000000"
+            android:textColorHint="#BBBBBB"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="#FF6F61"
+            android:backgroundTint="#FFFFFF"
+            android:drawableStart="@drawable/icon_signup"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:paddingVertical="12dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6F61"
+            android:drawableStart="@drawable/icon_login"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+</ScrollView>

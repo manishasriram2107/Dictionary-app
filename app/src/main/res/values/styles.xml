@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default Theme -->
+    <style name="Theme.Dictionary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#6200EE</item> <!-- Vibrant Purple -->
+        <item name="colorPrimaryVariant">#3700B3</item> <!-- Darker Purple -->
+        <item name="colorOnPrimary">#000000</item> <!-- Black Text -->
+        <item name="android:colorBackground">#F5F5F5</item> <!-- Light Gray Background -->
+        <item name="android:textColorPrimary">#000000</item> <!-- Black Text -->
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Theme.Dictionary.Dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#2C2C2C</item>
+        <item name="colorPrimaryVariant">#1F1F1F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:colorBackground">#1A1A1A</item>
+        <item name="android:textColorPrimary">#E0E0E0</item>
+        <item name="android:textColorHint">#B0B0B0</item> <!-- Add this line -->
+        <item name="android:buttonStyle">@style/ButtonStyle.Dark</item>
+    </style>
+
+
+    <!-- Blue Theme -->
+    <style name="Theme.Dictionary.Blue" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#2196F3</item> <!-- Bright Blue -->
+        <item name="colorPrimaryVariant">#1976D2</item> <!-- Dark Blue -->
+        <item name="colorOnPrimary">#000000</item> <!-- Black Text -->
+        <item name="android:colorBackground">#E3F2FD</item> <!-- Light Blue Background -->
+        <item name="android:textColorPrimary">#000000</item> <!-- Black Text -->
+        <item name="android:buttonStyle">@style/ButtonStyle.Blue</item>
+    </style>
+
+    <!-- Green Theme -->
+    <style name="Theme.Dictionary.Green" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#4CAF50</item> <!-- Bright Green -->
+        <item name="colorPrimaryVariant">#388E3C</item> <!-- Dark Green -->
+        <item name="colorOnPrimary">#000000</item> <!-- Black Text -->
+        <item name="android:colorBackground">#E8F5E9</item> <!-- Light Green Background -->
+        <item name="android:textColorPrimary">#000000</item> <!-- Black Text -->
+        <item name="android:buttonStyle">@style/ButtonStyle.Green</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- White Button Text -->
+    </style>
+
+    <style name="ButtonStyle.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#FFFFFF</item>
+        <item name="android:textColor">#000000</item> <!-- Black Button Text -->
+    </style>
+
+    <style name="ButtonStyle.Blue" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#2196F3</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- White Button Text -->
+    </style>
+
+    <style name="ButtonStyle.Green" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#4CAF50</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- White Button Text -->
+    </style>
+    <style name="ThemeCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">@drawable/btn_round_white</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+</resources>

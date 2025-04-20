@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions for Internet and Storage (if needed) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dictionary"
+        tools:targetApi="31">
+
+        <!-- Splash Screen/Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities (Make sure these exist in Java files) -->
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ThemeSelectionActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AgeNameActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".WordLearningActivity" />
+        <activity android:name=".LeaderboardActivity" />
+        <activity android:name=".AchievementActivity" />
+        <activity android:name=".EditWordActivity" />
+        <activity android:name=".SignupActivity" />
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

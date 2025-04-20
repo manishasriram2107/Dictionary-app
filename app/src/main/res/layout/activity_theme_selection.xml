@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_theme_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/mascot"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/dictionary_mascot"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Mascot" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Vibe ✨"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a theme that suits your mood 😎"
+            android:textColor="#DDDDDD"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnDark"
+            style="@style/ThemeCard"
+            android:text="🌙 Dark Theme" />
+
+        <Button
+            android:id="@+id/btnBlue"
+            style="@style/ThemeCard"
+            android:text="🌊 Blue Theme" />
+
+        <Button
+            android:id="@+id/btnGreen"
+            style="@style/ThemeCard"
+            android:text="🌿 Green Theme" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue ➡️"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:background="@drawable/btn_round_white"/>
+    </LinearLayout>
+</RelativeLayout>

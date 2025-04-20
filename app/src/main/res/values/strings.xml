@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="word_label">Word</string>
+    <string name="meaning_label">Meaning</string>
+    <string name="next_word_button">Next Word</string>
+    <string name="hint_word_input">Enter new word</string>
+    <string name="hint_meaning_input">Enter meaning</string>
+    <string name="add_word_button">Add Word</string>
+    <string name="words_left">Words left: %1$d</string>
+
+</resources>

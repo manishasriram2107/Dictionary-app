@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_dictionary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- 🧸 Mascot Image -->
+        <ImageView
+            android:id="@+id/imgMascot"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dictionary_mascot"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Dictionary Mascot" />
+
+        <!-- 🧮 Words left counter -->
+        <TextView
+            android:id="@+id/wordCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Words left: 0"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- 📘 Word Display -->
+        <TextView
+            android:id="@+id/wordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_box"
+            android:padding="16dp"
+            android:text="Word"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <!-- 📖 Meaning Display -->
+        <TextView
+            android:id="@+id/meaningText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_box"
+            android:padding="16dp"
+            android:text="Meaning"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <!-- 🗑️ Delete Button -->
+        <Button
+            android:id="@+id/btnDeleteWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Word"
+            android:drawableStart="@drawable/icon_delete"
+            android:layout_marginTop="10dp" />
+
+        <!-- ✍️ Add Word Input -->
+        <EditText
+            android:id="@+id/newWordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_box"
+            android:hint="Enter new word"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:layout_marginTop="10dp" />
+
+        <!-- ✍️ Add Meaning Input -->
+        <EditText
+            android:id="@+id/newMeaningInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_box"
+            android:hint="Enter meaning"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:layout_marginTop="8dp" />
+
+        <!-- ➕ Add Button -->
+        <Button
+            android:id="@+id/btnAddWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Word"
+            android:drawableStart="@drawable/icon_add"
+            android:layout_marginTop="10dp" />
+
+        <!-- ⏭️ Next Button -->
+        <Button
+            android:id="@+id/btnNextWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Word"
+            android:drawableStart="@drawable/icon_next"
+            android:layout_marginTop="10dp" />
+
+        <!-- ⭐ Favorite -->
+        <Button
+            android:id="@+id/btnFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Favorites"
+            android:drawableStart="@drawable/icon_star"
+            android:layout_marginTop="10dp" />
+
+        <!-- 🏆 Leaderboard -->
+        <Button
+            android:id="@+id/btnLeaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard"
+            android:drawableStart="@drawable/icon_leaderboard"
+            android:layout_marginTop="10dp" />
+
+        <!-- 🔙 Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:drawableStart="@drawable/icon_back"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

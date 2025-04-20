@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Mascot Image -->
+    <ImageView
+        android:id="@+id/mascotImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dictionary_mascot"
+        android:contentDescription="Mascot"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Age and Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Age Field -->
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"/>
+</LinearLayout>
